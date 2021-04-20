@@ -34,7 +34,7 @@ const AppContext = createContext<{
 }>({ state: initialState, dispatch: () => null });
 
 const mainReducer = (
-  { products, shoppingCart }: TInitialState,
+  { products, shoppingCart g: TInitialState,
   action: Action
 ) => ({
   products: productReducer(products, action),
